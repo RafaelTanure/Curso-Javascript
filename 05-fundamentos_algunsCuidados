@@ -1,0 +1,17 @@
+//Vai retornar infinito 
+console.log(7 / 0);
+
+// Pega o resultado do valor interno da string e divide por 2, o resultado vai ser 5
+console.log("10" / 2);
+
+//dessa forma não funciona
+console.log("show" * 2);
+
+//Entrega como ponto flutuante  pelo i3e  e vai ser impreciso por o tipo passado. 
+console.log(0.1 + 0.7);
+
+// console.log(10.toString); - > Não funciona 
+
+//dessa forma é possível passar a função 
+console.log((10.345).toFixed(2));
+
