@@ -1,0 +1,21 @@
+//templates String 
+
+// Aqui nesse exemplo não podemos fazer a quebra de linha 
+const nome = 'Rebeca';
+const concatenacao = 'Olá ' + nome + '!';
+
+//Para utilizar a quebra de linha, fazemos um template string 
+const template = `
+Olá
+${nome}!`;
+console.log(concatenacao, template);
+
+// expressões.... 
+
+// ele somara o 1+1 que está dentro da expressão que vem depois do caracter $ dolar 
+console.log(`1 + 1 = ${1 + 1}`);
+
+//dentro de um template string podemos chamar uma função 
+//Utilizando a funação toUpperCase pega o texto e passa para letras MAISCULAS 
+const up = s => s.toUpperCase(); 
+console.log (`Ei... ${up('cuidado')}!`);
