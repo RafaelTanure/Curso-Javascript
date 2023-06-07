@@ -1,0 +1,11 @@
+//Java script é organizado por sentenças de códigos que pode ou não conter " ; " junto com as senteças temos os blocos.
+
+console.log("Sentença de código");
+
+{
+    //Um bloco em um código é representado por chaves. Pode haver um bloco dentro do outro. 
+    {
+        console.log("Olá");
+        console.log("Mundo!") // Padrão do curso sem ; 
+    }
+}
