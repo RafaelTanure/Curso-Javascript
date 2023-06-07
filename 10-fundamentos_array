@@ -1,0 +1,24 @@
+//Array é um tipo de dados dinanimacos, ele cresce e diminui é uma estrutura indexada ele é Heterogenico.
+const valores = [7.7, 8.9, 6.3, 9.2];
+//Passamos o array , utilizamos as expreções "[] "
+console.log(valores[0], valores[3]);
+//vai indicar que a posição passada está indefinida por não estar apresentada no array 
+console.log(valores[4]); // forma de acessar a parte do indice 
+
+valores[4] = 10;
+
+console.log(valores);
+console.log(valores.length);
+//metódo push 
+valores.push({ id: 3 }, false, null, 'teste');
+console.log(valores); 
+
+// metodo pop 
+console.log(valores.pop());
+
+// Exclusão dos indices do array utilizando o delete. 
+delete valores [ 0 ]; 
+console.log(valores); 
+
+// passsando o tipo do array . 
+console.log(typeof valores); 
