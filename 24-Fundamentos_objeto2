@@ -1,0 +1,10 @@
+console.log(typeof Object); //Aqui vendo o tipo do que é passado. 
+console.log(typeof new Object); //Aqui estamos instanciando uma função.
+
+const Cliente = function () { }
+console.log(typeof Cliente); // Imprime function 
+console.log(typeof new Cliente); // Imprime um object  
+ 
+class Produto{} //ES ECMAScript 2015 (ES6) criamos uma classe que é um detalhe de função. A função em si exerce o papel de uma classe 
+console.log(typeof Produto);  // Imprime Função 
+console.log(typeof new Produto()); // Imprime Objeto Isntanciando a classe 
