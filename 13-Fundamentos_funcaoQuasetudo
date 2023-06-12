@@ -1,0 +1,6 @@
+// Analisamos aqui o object que é uma função, imprime na tela 
+console.log(typeof Object);
+
+//Aqui é uma  função, imprime uma função 
+class Produto { }
+console.log(typeof Produto); 
