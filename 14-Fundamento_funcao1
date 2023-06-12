@@ -1,0 +1,18 @@
+//Criada uma função sem retorno
+function imprimirSoma(a, b) {
+    console.log(a + b);
+} // Uma função tem um bloco de código e um nome, sempre dar uma nome adequado a uma função para que possa ser de fácil acesso.
+
+imprimirSoma(2, 3);
+imprimirSoma(2);// Imprime na tela um NaN NoteAnanber. 
+imprimirSoma(2, 10, 4, 5, 6, 7, 8); // Vai somar apenas os dois primeiros números , po conta da quantidade de váraveis que tem na função. 
+imprimirSoma(); //Chamar a função vazia vai imprimir Nan NoteAnanber. 
+
+//Função com retorno 
+
+function soma(a, b = 0) {
+    return a + b;
+}
+console.log(soma(2, 3)); // Retorna 5
+console.log(soma(2)); // Retorna 2 
+console.log(soma());  // Retorna NotAnanber NaN
