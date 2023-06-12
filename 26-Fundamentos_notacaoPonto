@@ -1,0 +1,21 @@
+console.log(Math.ceil(6.1)); // Utilizando o Math.ceil e pssando a notação ponto temos uma notação ponto 
+
+const obj1 = {}
+obj1.nome = 'Bola';
+//objt1['nome'] ='Bola2'
+
+console.log(obj1.nome); // Imprime o nome Bola 
+
+function Object(nome) {
+    this.nome = nome; // This utiliza a notação . para que seja passado o valor em seguida 
+    this.exec= function(){
+        console.log('Exec....'); //A partir daqui podemos chamar a função e passar valor a ela utilizando tanto a notação ponto como a forma normal para acessar os atributos. 
+    }
+}
+
+const obj2 = new Obj('cadeira');
+const obj3 = new Obj('Mesa');
+
+console.log(obj2.nome); // Utilizando a notação ponto para acessar os membros do  objeto e os membros da função 
+console.log(obj3.nome); 
+obj3.exec();
