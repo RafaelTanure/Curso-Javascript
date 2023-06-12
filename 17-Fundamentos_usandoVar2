@@ -1,0 +1,7 @@
+var numero = 1;
+{
+    var numero = 2;
+    console.log('dentro = ', numero);
+}
+console.log('fora= ', numero);
+// Vai pegar a variavel que tem o escopo maior.Ignorando o valor menor. Lembrando que isso não vai acontecer quando se trabalha com let.
