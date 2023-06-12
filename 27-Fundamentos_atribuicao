@@ -1,0 +1,17 @@
+const a = 7; // o = é um simbolo de atribuição de váriavel
+let b = 3;
+
+b += a; // atribuição aditiva retorna 10 
+console.log(b);
+
+b -= 4;// atribuição subtrativa retorna 6 
+console.log(b); 
+
+b *= 2; // atribuição  multiplicativa retornar 12 
+console.log(b);
+
+b/=2;  // atribuição divisiva retorna 6 
+console.log(b); 
+
+b%=2; // atribuição modular retorna 0 
+console.log(b); 
