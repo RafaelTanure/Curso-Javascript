@@ -1,0 +1,16 @@
+function getInteiroAleatorioEntre(min, max) {
+    //Lembrando que o Math.random retorna um número inteiro de aleátorios
+    const valor = Math.random() * (max - min) + min
+    //Lembrando que o Math.Floor arredonda o valor, retornando o menor numero inteiro. 
+    return Math.floor(valor)
+}
+let opcao // Somente iniciada a variável , sem valor inicial !!!!!
+
+do {
+    opcao = getInteiroAleatorioEntre(-1, 10)
+    console.log(`Opação escolhida foi ${opcao}`)
+} while (opcao != - 1) // Utilizando essa estrutura a instrução é depois do bloco 
+
+console.log('Até a próxima');
+
+//Diferente da estrutura While, o Do/While não é necessário atribuir um valor inicial para a variável opcao 
