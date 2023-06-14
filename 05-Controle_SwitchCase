@@ -1,0 +1,34 @@
+const imprimirResultado = function (nota) {
+    switch (Math.floor(nota)) {
+        //caso for 10 e 9 imprime Quadro de Honra
+        case 10: case 9:
+            console.log('Quadro de Honra');
+            //Sempre colocar o break para parar o código e não executar direto
+            break;
+        //Caso for 8 e 7 imprime Aprovado 
+        case 8: case 7:
+            console.log('Aprovado');
+            break;
+        //Caso for 6 ,5 e 4 imprime Recuperação. 
+        case 6: case 5: case 4:
+            console.log('Recuperação');
+            break;
+        //Caso for 3,2,1 e 0 imprime Reprovado.
+        case 3: case 2: case 1: case 0:
+            console.log('Reprovado ');
+        //Quando utilizamos o default é por que chegamos ao fim do código e apresentado Nota Invalida, caso não seja nenhuma das notas que estão no código
+        default:
+            console.log('Nota Inválida');
+    }
+}
+//Sem o Break ele vai executar tudo direto.
+
+//Chamando a função imprimir resultado 
+imprimirResultado(10); // Imprime Quadro de Honra
+imprimirResultado(8.9);// Imprime Aprovado 
+imprimirResultado(6.55); //Imprime Recuperação  
+imprimirResultado(2.3); // Imprime Reprovado 
+imprimirResultado(-1); // Nota Invalida
+imprimirResultado(11);// Nota Invalivada 
+
+//Não tem como fazer intervalos nas chamadas switch case 
