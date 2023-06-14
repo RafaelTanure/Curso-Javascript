@@ -1,0 +1,16 @@
+//For in é uma forma que recebemos a váriavel in como paramento , podemos fazer um for in em cima de um objeto ou em cima de um array.
+const notas = [6.7, 7.4, 9.8, 8.1, 7.7]
+// In significa indices daquilo que foi passado , por exemplo retor o que está dentro do array. 
+for (let i in notas) {
+    console.log(i, notas[i])
+}
+const pessoa = {
+    nome: 'Ana',
+    sobrenome: 'Silva',
+    idade: 29,
+    peso: 64
+}
+//declarando como let não pode sair do escopo a váriavel atributo sendo assim ficando mais organizado o código , aqui pegamos o objeto pessoa criado a cima e utilizamos com o atributo
+for (let atributo in pessoa) {
+    console.log(`${atributo} = ${pessoa[atributo]}`)
+}
